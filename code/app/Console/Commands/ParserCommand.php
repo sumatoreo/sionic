@@ -51,15 +51,15 @@ class ParserCommand extends Command
         }
 
         foreach ($datum as $key => $item) {
-            $this->info($file);
             $file = storage_path('app/' . $item['import']);
+            $this->info($file);
             $this->importParser($file, $xmlReader);
             echo PHP_EOL . PHP_EOL;
         }
 
         foreach ($datum as $key => $item) {
-            $this->info($file);
             $file = storage_path('app/' . $item['offers']);
+            $this->info($file);
             $this->offerParser($file, $xmlReader);
             echo PHP_EOL . PHP_EOL;
         }
