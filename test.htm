@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0032)https://sionic.ru/test/test.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- 2019-12-17 Вт 13:55 -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тестовое задание</title>
+<meta name="generator" content="Org mode">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Тестовое задание</h1>
+
+
+<div id="outline-container-org03fcf6e" class="outline-2">
+<h2 id="org03fcf6e"><span class="section-number-2">1</span> Тестовое задание</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Данная задача в общем и целом представляет собой упрощённую версию
+одной из задач, с которой мы сами сталкивались в процессе работы.
+</p>
+
+<p>
+Тестовое задание разбито на две части. Выполнение второй части будет
+плюсом, выполнение же первой обязательно.
+</p>
+
+<p>
+Языком для реализации является PHP, базой данных - PostgreSQL или
+MySQL, остальное значения не имеет.
+</p>
+</div>
+
+<div id="outline-container-orgf22919d" class="outline-3">
+<h3 id="orgf22919d"><span class="section-number-3">1.1</span> Часть 1</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Необходимо написать скрипт импорта данных, обрабатывающий директорию с
+несколькими файлами в формате xml, и складывающий получившиеся данные
+в базу данных (БД).
+</p>
+
+<p>
+Файлы представляют собой немного видоизменённый формат типовой
+выгрузки системы 1С, содержащей в себе информацию о товарных
+предложениях.
+</p>
+
+<p>
+В директории располагаются файлы <code>importX_1.xml</code> и <code>offersX_1.xml</code>. В
+названиях файлов <i>X</i> обозначает город, информация по товарам которого
+представлена в файле. Каждая пара файлов (import и offers) в
+совокупности представляет собой информацию о товарах для конкретного
+города. Файлы дополняют друг друга, то есть часть информации находится
+в одном файле, часть - в другом.
+</p>
+
+<p>
+Название города также указано в содержимом тэга <b>Классификатор-&gt;Наименование</b> в
+начале файла, например:
+</p>
+<div class="org-src-container">
+<pre class="src src-xml">&lt;<span style="color: #a40000; font-weight: bold;">Наименование</span>&gt;Классификатор (Москва)&lt;/<span style="color: #a40000; font-weight: bold;">Наименование</span>&gt;
+</pre>
+</div>
+<p>
+Это может использоваться для определения названия города, для которого
+применяется данный файл.
+</p>
+
+<p>
+Нужная для задания информация - список товаров и торговых предложений,
+которые сопоставляются по значению поля <b>Код</b>.
+</p>
+
+<p>
+В файле <b>import</b> это:
+</p>
+<div class="org-src-container">
+<pre class="src src-xml">&lt;<span style="color: #a40000; font-weight: bold;">Каталог</span>&gt;
+  &lt;<span style="color: #a40000; font-weight: bold;">Товары</span>&gt;
+
+    &lt;<span style="color: #a40000; font-weight: bold;">Товар</span>&gt;
+      <span style="color: #5f615c; font-style: italic;">&lt;!-- </span><span style="color: #5f615c; font-style: italic;">поля товара </span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+      &lt;<span style="color: #a40000; font-weight: bold;">Код</span>&gt;1234567&lt;/<span style="color: #a40000; font-weight: bold;">Код</span>&gt;        <span style="color: #5f615c; font-style: italic;">&lt;!--</span><span style="color: #5f615c; font-style: italic;">Код товара</span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+      &lt;<span style="color: #a40000; font-weight: bold;">Вес</span>&gt;0.035&lt;/<span style="color: #a40000; font-weight: bold;">Вес</span>&gt;          <span style="color: #5f615c; font-style: italic;">&lt;!--</span><span style="color: #5f615c; font-style: italic;">Вес товара</span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+      &lt;<span style="color: #a40000; font-weight: bold;">Наименование</span>&gt;Наименование товара&lt;/<span style="color: #a40000; font-weight: bold;">Наименование</span>&gt; <span style="color: #5f615c; font-style: italic;">&lt;!--</span><span style="color: #5f615c; font-style: italic;">Название товара</span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+      &lt;<span style="color: #a40000; font-weight: bold;">Взаимозаменяемости</span>&gt;
+        &lt;<span style="color: #a40000; font-weight: bold;">Взаимозаменяемость</span>&gt;
+          &lt;<span style="color: #a40000; font-weight: bold;">Марка</span>&gt;CUMMINS&lt;/<span style="color: #a40000; font-weight: bold;">Марка</span>&gt;
+          &lt;<span style="color: #a40000; font-weight: bold;">Модель</span>&gt;ISBe6.7 (ISDe6.7)&lt;/<span style="color: #a40000; font-weight: bold;">Модель</span>&gt;
+          &lt;<span style="color: #a40000; font-weight: bold;">КатегорияТС</span>&gt;Двигатели&lt;/<span style="color: #a40000; font-weight: bold;">КатегорияТС</span>&gt;
+        &lt;/<span style="color: #a40000; font-weight: bold;">Взаимозаменяемость</span>&gt;
+        <span style="color: #5f615c; font-style: italic;">&lt;!-- </span><span style="color: #5f615c; font-style: italic;">... ещё взаимозаменяемости </span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+      &lt;/<span style="color: #a40000; font-weight: bold;">Взаимозаменяемости</span>&gt;
+      <span style="color: #5f615c; font-style: italic;">&lt;!-- </span><span style="color: #5f615c; font-style: italic;">остальные поля можно игнорировать </span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+   &lt;/<span style="color: #a40000; font-weight: bold;">Товар</span>&gt;
+
+   &lt;<span style="color: #a40000; font-weight: bold;">Товар</span>&gt;
+      <span style="color: #5f615c; font-style: italic;">&lt;!-- </span><span style="color: #5f615c; font-style: italic;">информация о другом товаре </span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+   &lt;/<span style="color: #a40000; font-weight: bold;">Товар</span>&gt;
+
+   <span style="color: #5f615c; font-style: italic;">&lt;!-- </span><span style="color: #5f615c; font-style: italic;">... ещё товары ... </span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+
+   &lt;/<span style="color: #a40000; font-weight: bold;">Товары</span>&gt;
+&lt;/<span style="color: #a40000; font-weight: bold;">Каталог</span>&gt;
+</pre>
+</div>
+
+<p>
+В файле <b>offers</b>:
+</p>
+<div class="org-src-container">
+<pre class="src src-xml">&lt;<span style="color: #a40000; font-weight: bold;">ПакетПредложений</span>&gt;
+  &lt;<span style="color: #a40000; font-weight: bold;">Предложения</span>&gt;
+
+    &lt;<span style="color: #a40000; font-weight: bold;">Предложение</span>&gt;
+      &lt;<span style="color: #a40000; font-weight: bold;">Код</span>&gt;1234567&lt;/<span style="color: #a40000; font-weight: bold;">Код</span>&gt;        <span style="color: #5f615c; font-style: italic;">&lt;!--</span><span style="color: #5f615c; font-style: italic;">Код товара</span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+      &lt;<span style="color: #a40000; font-weight: bold;">Наименование</span>&gt;Наименование товара&lt;/<span style="color: #a40000; font-weight: bold;">Наименование</span>&gt; <span style="color: #5f615c; font-style: italic;">&lt;!--</span><span style="color: #5f615c; font-style: italic;">Название товара</span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+      &lt;<span style="color: #a40000; font-weight: bold;">Количество</span>&gt;1&lt;/<span style="color: #a40000; font-weight: bold;">Количество</span>&gt;                       <span style="color: #5f615c; font-style: italic;">&lt;!--</span><span style="color: #5f615c; font-style: italic;">Количество товара в данном городе</span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+      &lt;<span style="color: #a40000; font-weight: bold;">Цены</span>&gt;
+        <span style="color: #5f615c; font-style: italic;">&lt;!-- </span><span style="color: #5f615c; font-style: italic;">В качестве цены товара берётся первая по порядку цена из блока, остальные не нужны </span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+        &lt;<span style="color: #a40000; font-weight: bold;">Цена</span>&gt;
+          &lt;<span style="color: #a40000; font-weight: bold;">ЦенаЗаЕдиницу</span>&gt;11891&lt;/<span style="color: #a40000; font-weight: bold;">ЦенаЗаЕдиницу</span>&gt; <span style="color: #5f615c; font-style: italic;">&lt;!--</span><span style="color: #5f615c; font-style: italic;">Цена товара</span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+        &lt;/<span style="color: #a40000; font-weight: bold;">Цена</span>&gt;
+        <span style="color: #5f615c; font-style: italic;">&lt;!-- </span><span style="color: #5f615c; font-style: italic;">... </span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+      &lt;/<span style="color: #a40000; font-weight: bold;">Цены</span>&gt;
+      <span style="color: #5f615c; font-style: italic;">&lt;!-- </span><span style="color: #5f615c; font-style: italic;">остальные поля можно игнорировать </span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+    &lt;/<span style="color: #a40000; font-weight: bold;">Предложение</span>&gt;
+
+    &lt;<span style="color: #a40000; font-weight: bold;">Предложение</span>&gt;
+      <span style="color: #5f615c; font-style: italic;">&lt;!-- </span><span style="color: #5f615c; font-style: italic;">информация о другом предложении </span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+
+    &lt;/<span style="color: #a40000; font-weight: bold;">Предложение</span>&gt;
+
+    <span style="color: #5f615c; font-style: italic;">&lt;!-- </span><span style="color: #5f615c; font-style: italic;">... ещё предложения ... </span><span style="color: #5f615c; font-style: italic;">--&gt;</span>
+
+  &lt;/<span style="color: #a40000; font-weight: bold;">Предложения</span>&gt;
+&lt;/<span style="color: #a40000; font-weight: bold;">ПакетПредложений</span>&gt;
+</pre>
+</div>
+
+<p>
+Соответственно, блоки <b>Товар</b> и <b>Предложение</b> с одинаковым полем <b>Код</b>
+относятся к одному товару. Не все товары представлены во всех файлах,
+то есть в одном городе может быть больше товаров, чем в другом.
+</p>
+
+<p>
+Необходимо написать скрипт на PHP, который бы разбирал содержимое всех
+файлов, собирал их вместе и складывал бы в таблицу в БД следующего
+формата:
+</p>
+
+<ul class="org-ul">
+<li><code>id</code> - ID товара в БД (autoincrement, primary key)</li>
+<li><code>name</code> - название товара</li>
+<li><code>code</code> - код товара</li>
+<li><code>weight</code> - вес товара</li>
+<li><code>quantity_CITY</code> - количество товара в конкретном городе. Несколько
+колонок, по одной для каждого города, например <code>quantity_msk</code>,
+<code>quantity_kazan</code> и так далее. Коды для городов можно взять любые</li>
+<li><code>price_CITY</code> - цена товара в конкретном городе. Аналогично
+<code>quantity_CITY</code></li>
+<li><code>usage</code> - перечисленные через символ "|" взаимозаменяемости для данного
+товара в виде
+"Марка-Модель-КатегорияТС,Марка-Модель-КатегорияТС,…". Пример:
+"Foton-1039 E4-Грузовые автомобили|Cummins-ISLe8.9-Двигатели|…".</li>
+</ul>
+
+<p>
+Если в каком-либо городе нет количества или цены для данного товара,
+или он отсутствует вообще, в соответствующие поля ставится 0. Если в
+разных файлах у одного и того же товара имеются несовпадающие поля,
+например, название или вес, можно использовать любое из них для
+записи в БД.
+</p>
+
+<p>
+При последующем запуске скрипт должен обновлять данные по товарам,
+находя соответствие по полю <b>Код</b> (то есть обновлять то, что уже есть,
+а не добавлять новые).
+</p>
+
+<p>
+Скрипт желательно реализовать в виде программы для командной строки
+UNIX-образной ОС.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgad0209b" class="outline-3">
+<h3 id="orgad0209b"><span class="section-number-3">1.2</span> Часть 2</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Вывести данные из БД на веб-странице в постраничном виде в виде
+таблицы, упорядоченные в порядке убывания id. Язык реализации - PHP,
+используемые фреймворки, инструменты и внешний вид не
+важны. Количество товаров на странице тоже не имеет значения (то есть
+можно взять любое адекватное число, например, 20 или 50).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdf90032" class="outline-3">
+<h3 id="orgdf90032"><span class="section-number-3">1.3</span> Данные</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Данные для работы: <a href="https://sionic.ru/test/data.tar.gz">data.tar.gz</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2019-12-17 Вт 13:55</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+
+
+</body></html>
