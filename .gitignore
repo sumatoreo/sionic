@@ -1,0 +1,19 @@
+# Main
+.DS_Store
+
+# App
+app/.DS_Store
+
+# PostgreSQL
+db
+
+# Nginx
+nginx/log
+nginx/.DS_Store
+nginx/log/.DS_Store
+nginx/conf.d/.DS_Store
+nginx/conf.d/*.conf
+nginx/conf.d/!default.conf
+
+# Composer Cache
+composer
