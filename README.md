@@ -1,5 +1,7 @@
 # Install
 
+Add `test.test` domain to `hosts` file.
+
 ```shell
 docker-compose up -d
 docker-compose exec app bash
