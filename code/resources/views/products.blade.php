@@ -19,7 +19,7 @@
         <th>Код</th>
         <th>Вес</th>
         @foreach($cities as $city)
-            <th>{{ $city->name }}</th>
+            <th class="text-nowrap">{{ $city->name }}</th>
         @endforeach
     </tr>
     </thead>
