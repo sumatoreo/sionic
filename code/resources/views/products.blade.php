@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-<table class="container">
-    <thead>
+<table class="table">
+    <thead class="thead-dark">
     <tr>
         <th>ID</th>
         <th>Имя</th>
         <th>Код</th>
         <th>Вес</th>
-        <th>Город</th>
-        <th>Цена</th>
-        <th>Количество</th>
+        @foreach($cities as $city)
+            <th>{{ $city->name }}</th>
+        @endforeach
     </tr>
     </thead>
     <tbody>
@@ -30,9 +30,13 @@
             <td>{{ $product->name }}</td>
             <td>{{ $product->code }}</td>
             <td>{{ $product->weight }}</td>
-            <td>{{ $product->datas->city->name }}</td>
-            <td>{{ $product->datas->price }}</td>
-            <td>{{ $product->datas->count }}</td>
+            @foreach($product->datas as $city)
+                <td class="text-nowrap">
+                    <strong>Кол-во</strong>: {{ $city->count }}
+                    <br>
+                    <strong>Цена</strong>: {{ $city->price }}
+                </td>
+            @endforeach
         </tr>
     @endforeach
     </tbody>
